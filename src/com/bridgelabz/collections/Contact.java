@@ -4,10 +4,10 @@ public class Contact {
 
 	private String firstName;
 	private String lastName;
-	private long phoneNumber;
+	private String phoneNumber;
 	private String email;
 	private String city;
-	private long zip;
+	private String zip;
 	private String state;
 
 	public String getFirstName() {
@@ -26,11 +26,11 @@ public class Contact {
 		this.lastName = lastName;
 	}
 
-	public long getPhoneNumber() {
+	public String getPhoneNumber() {
 		return phoneNumber;
 	}
 
-	public void setPhoneNumber(long phoneNumber) {
+	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 
@@ -50,11 +50,11 @@ public class Contact {
 		this.city = city;
 	}
 
-	public long getZip() {
+	public String getZip() {
 		return zip;
 	}
 
-	public void setZip(long zip) {
+	public void setZip(String zip) {
 		this.zip = zip;
 	}
 

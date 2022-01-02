@@ -45,6 +45,8 @@ public class AddressBook {
 				break;
 
 			case "5":
+				isExit = true;
+				showContacts();
 				break;
 
 			default:

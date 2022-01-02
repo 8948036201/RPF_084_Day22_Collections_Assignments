@@ -121,6 +121,24 @@ public class AddressBook {
 		System.out.println("Contact has been edited.");
 	}
 
+	private static void deleteContact(Scanner scanner) {
+		System.out.println("Which contact you want to Delete? (Enter the First name)");
+		String firstName = scanner.nextLine();
+
+		Contact deleteContact = null;
+		for (int i = 0; i < addressBook.size(); i++) {
+			if (firstName.equals(addressBook.get(i).getFirstName())) {
+				deleteContact = addressBook.remove(i);
+			}
+		}
+
+		if (deleteContact == null) {
+			System.out.println("No contact found with name " + firstName + ".");
+		} else {
+			System.out.println(deleteContact.getFirstName() + "'s contact has been removed from your Address Book.");
+		}
+	}
+
 	public static String validateFirstName(String firstName, Scanner scanner) {
 		String resultPattern = "^[A-Z]{1}[a-z]{2,9}$";
 		Pattern regex = Pattern.compile(resultPattern);

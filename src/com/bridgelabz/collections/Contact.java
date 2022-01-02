@@ -6,7 +6,9 @@ public class Contact {
 	private String lastName;
 	private long phoneNumber;
 	private String email;
-	private Address address;
+	private String city;
+	private long zip;
+	private String state;
 
 	public String getFirstName() {
 		return firstName;
@@ -40,17 +42,33 @@ public class Contact {
 		this.email = email;
 	}
 
-	public Address getAddress() {
-		return address;
+	public String getCity() {
+		return city;
 	}
 
-	public void setAddress(Address address) {
-		this.address = address;
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public long getZip() {
+		return zip;
+	}
+
+	public void setZip(long zip) {
+		this.zip = zip;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
 	}
 
 	@Override
 	public String toString() {
 		return "Contact [firstName=" + firstName + ", lastName=" + lastName + ", phoneNumber=" + phoneNumber
-				+ ", email=" + email + ", address=" + address + "]";
+				+ ", email=" + email + ", city=" + city + ", zip=" + zip + ", state=" + state + "]";
 	}
 }

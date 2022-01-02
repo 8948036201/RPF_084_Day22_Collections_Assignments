@@ -50,6 +50,7 @@ public class AddressBook {
 				break;
 
 			default:
+				System.out.println("Invalid option choosed.");
 				break;
 			}
 		}
